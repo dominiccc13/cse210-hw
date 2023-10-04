@@ -5,21 +5,17 @@ class Program
 {
     static void Main(string[] args)
     {
-        // System.Console.WriteLine("Hello Learning03 World!");
-
         Job job1 = new Job();
         job1._jobTitle = "Computer Engineer";
         job1._company = "Dell";
         job1._startYear = "2019";
         job1._endYear = "2023";
-        // job1.DisplayJob();
 
         Job job2 = new Job();
         job2._jobTitle = "Project Manager";
         job2._company = "Tech Company";
         job2._startYear = "2019";
         job2._endYear = "Present";
-        // job2.DisplayJob();
 
         Resume resume = new Resume();
         resume._name = "Dominic Stefani";
