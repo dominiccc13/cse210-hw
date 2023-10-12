@@ -16,12 +16,11 @@ class Program
             int selection = int.Parse(Console.ReadLine());
 
             if(selection==1){
-                // while(selection == 1){
-                    Entry entry = new Entry();
-                    entry._prompt = entry.GeneratePrompt();
-                    entry._entry = Console.ReadLine();
-                    entry._date = entry.GetDate();
-                    journal._journalEntries.Add(entry);
+                Entry entry = new Entry();
+                entry._prompt = entry.GeneratePrompt();
+                entry._entry = Console.ReadLine();
+                entry._date = entry.GetDate();
+                journal._journalEntries.Add(entry);
 
                 //     System.Console.WriteLine("Would you like to make another entry? 1 for yes, 0 for no.");
                 //     selection = int.Parse(Console.ReadLine());
@@ -29,9 +28,8 @@ class Program
             }
             else if(selection==2){
                 Console.Clear();
-                Entry entryRun = new Entry();
 
-                entryRun.IterateEntries(journal._journalEntries);
+                Entry.IterateEntries(journal._journalEntries);
             }
             else if(selection==3){
                 journal.WriteToFile();

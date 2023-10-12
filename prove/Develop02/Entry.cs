@@ -39,7 +39,7 @@ public class Entry
         string date = $"{month}/{day}/{year}";
         return date;   
     }
-    public void IterateEntries(List<Entry> entries){
+    public static void IterateEntries(List<Entry> entries){
         foreach (Entry entry in entries){
             System.Console.WriteLine($"Date: {entry._date} - Prompt: {entry._prompt}\nEntry: {entry._entry}");
         }

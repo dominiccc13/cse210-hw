@@ -2,7 +2,7 @@ using System.Runtime.Intrinsics.Arm;
 
 public class Journal{
     public List<Entry> _journalEntries = new List<Entry>();
-    public Entry entry;
+    // public Entry entry;
 
     public void WriteToFile(){
         System.Console.WriteLine("Provide the filename at which you will store your entries:");
