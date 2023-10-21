@@ -21,12 +21,6 @@ class Program
             
             System.Console.WriteLine(scriptureText);
 
-            string value = wordText;
-            string[] valueSplit = value.Split(" ");
-            foreach (string item in valueSplit){
-                
-            }
-
             wordText = word1.AlterWord();
             scriptureText = scripture1.MakeScripture(referenceText, wordText);
                 
