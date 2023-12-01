@@ -1,2 +1,0 @@
-Simple,Yodel,false,0,0
-Simple,Jog,false,0,0
