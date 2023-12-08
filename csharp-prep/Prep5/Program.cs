@@ -33,7 +33,6 @@ class Program
         System.Console.WriteLine($"{name}, your number squared is {squareNumber}.");
     }
 
-
     static void Main(string[] args)
     {
         DisplayWelcome();

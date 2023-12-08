@@ -1,6 +1,7 @@
 class Fraction{
     private double _numerator;
     private double _denominator;
+        
         // Constructor
     public Fraction(){
         _numerator = 1;
@@ -14,6 +15,7 @@ class Fraction{
         _numerator = numerator;
         _denominator = denominator;
     }
+        
         // Getters & Setters
     public void setNumerator(double numerator){
         _numerator = numerator;
