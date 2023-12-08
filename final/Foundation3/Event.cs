@@ -5,29 +5,29 @@ abstract class Event
     protected string _date;
     protected string _time;
     protected string _address;
-    public Event(string title, string desc, string date, string time, string address) {
+    protected string _type;
+
+    public Event(string title, string desc, string date, string time, Address address) {
         _title = title;
         _desc = desc;
         _date = date;
         _time = time;
-        _address = address;
+        _address = address.FullAddress();
     }
     public void StandardDetails() {
-        System.Console.WriteLine($"Title: {this._title}");
-        System.Console.WriteLine($"Description: {this._desc}");
-        System.Console.WriteLine($"Date: {this._date}");
-        System.Console.WriteLine($"Time: {this._time}");
-        System.Console.WriteLine($"Address: {this._address}");
+        System.Console.WriteLine($"\tTitle: {this._title}");
+        System.Console.WriteLine($"\tDescription: {this._desc}");
+        System.Console.WriteLine($"\tDate: {this._date}");
+        System.Console.WriteLine($"\tTime: {this._time}");
+        System.Console.WriteLine($"\tAddress: {this._address}");
     }
     public abstract void FullDetails();
-    //     public void FullDetails() {
-    //     System.Console.WriteLine($"Title: {this._title}");
-    //     System.Console.WriteLine($"Description: {this._desc}");
-    //     System.Console.WriteLine($"Date: {this._date}");
-    //     System.Console.WriteLine($"Time: {this._time}");
-    //     System.Console.WriteLine($"Address: {this._address}");
-    // }
-    // public string GetType() {
-    //     return this._type;
-    // }
+    public virtual void SetType() {
+        _type = "standard";
+    }
+    public void ShortDescription() {
+        System.Console.WriteLine($"\tType: {this._type}");
+        System.Console.WriteLine($"\tTitle: {this._title}");
+        System.Console.WriteLine($"\tDate: {this._date}");
+    }
 }
